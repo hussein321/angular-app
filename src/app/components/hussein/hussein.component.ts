@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {User} from '../User'
 @Component({
   selector: 'app-hussein',
   templateUrl: './hussein.component.html',
@@ -7,19 +7,60 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HusseinComponent implements OnInit {
 
+  user:User;
 
-  name = "ahmed";
-  user = {
-    name : "ali",
-    age : 25,
-    work : "it"
-  }
+  msg = "workkkkkkkk";
+  showMess = false;
+  users:User[];
   constructor() { 
-    this.user.age = 32;
+   
+
+    this.user = {
+      name : "hdhd",
+      age:"skadas",
+      work:"fff"
+    
+    
+    }
+    this.users = [
+
+      {
+        name : "sara",
+        age:"skadas",
+        work:"fff"
+      
+      
+      },
+      {
+        name : "rawan",
+        age:"skadas",
+        work:"fff"
+      
+      
+      },
+      {
+        name : "Alaa",
+        age:"skadas",
+        work:"fff"
+      
+      
+      },
+      {
+        name : "ahmed",
+        age:"skadas",
+        work:"fff"
+      
+      
+      }
+
+
+    ]
   }
 
   ngOnInit() {
-    this.user.age = 33;
+    
   }
 
 }
+
+

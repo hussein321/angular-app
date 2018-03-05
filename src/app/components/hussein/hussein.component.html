@@ -1,5 +1,10 @@
-<h1>
+<h1 class="myColor">
   hussein works! <br>
-  {{name}} <br>
-  {{user.age}}
-</h1>
+  </h1>
+  <h2 *ngIf='showMess; else anthorname '>{{msg}}</h2><br> <br> <br> <br>
+  <span><ng-template #anthorname>hussien</ng-template></span>
+  <ul>
+<li *ngFor="let u of users" >{{u.name}}</li>
+  </ul>
+
+
